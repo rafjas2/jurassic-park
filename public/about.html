@@ -9,17 +9,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link type="text/css" rel="stylesheet" href="css/master.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+      <link href="css/lightbox.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet">
    </head>
    <body>
       <div class="wrap">
          <nav>
             <a href="index.html"><img src="images/jurassic-park-logo.png" alt="Jurrasic Park Logo" width="150" height="84"/></a>
             <ul>
-               <li><a class="active" href="index.html">HOME</a></li>
-               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="index.html">HOME</a></li>
+               <li><a class="active" href="about.html">ABOUT</a></li>
                <li><a href="dinosaurs.html">DINOSAURS</a></li>
                <li><a href="attractions.html">ATTRACTIONS</a></li>
                <li><a href="contact.html">CONTACT</a></li>
@@ -27,17 +27,43 @@
          </nav>
          <header>
             <ul>
-               <li><label for="slide-1-trigger">Home</label></li>
-               <li><label for="slide-2-trigger">Special Offer</label></li>
-               <li><label for="slide-3-trigger">Ticket Prices</label></li>
-               <li><label for="slide-3a-trigger">Opening Hours</label></li>
+               <li><label for="slide-4-trigger">Creator</label></li>
+               <li><label for="slide-5-trigger">Gallery Of Park</label></li>
             </ul>
          </header>
-         <input id="slide-1-trigger" type="radio" name="slides" checked>
-         <section class="slide slide-one">
-            <div class="banner cf">
-               <h1>START YOUR<span>ADVENTURE</span></h1>
-               <a href="attractions.html">EXPLORE</a>	
+         <input id="slide-4-trigger" type="radio" name="slides" checked>
+         <section class="slide slide-four">
+            <h1>John Hammond</h1>
+            <p>As CEO of InGen, Hammond pioneered the idea of bringing dinosaurs to life. He was dedicated to giving people an experience that was exciting and new, urging the world to surpass their dreams and unearth an amazing adventure. Ever looking towards the future, his statue stands before the Hammond Creation Lab in remembrance of his heart, passion, and imagination. </p>
+         </section>
+         <input id="slide-5-trigger" type="radio" name="slides">
+         <section class="slide slide-five">
+            <h1>Gallery Of Park</h1>
+            <div id="content" class="cf">
+               <figure>
+                  <a href="images/about/jurassic1.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic1.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic2.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic2.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic3.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic3.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic4.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic4.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic5.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic5.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic6.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic6.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic7.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic7.jpg" alt="view of park" width="400"/></a>
+               </figure>
+               <figure>
+                  <a href="images/about/jurassic8.jpg" data-lightbox="img" data-title="View of park"><img src="images/about/jurassic8.jpg" alt="view of park" width="400"/></a>
+               </figure>
             </div>
          </section>
          <input id="slide-2-trigger" type="radio" name="slides">
@@ -132,6 +158,9 @@
          </section>
          <footer>
             <h3>&copy; Rafal Jasinski 2017</h3>
+            <label for="slide-2-trigger">Special Offer</label>
+            <label for="slide-3-trigger">Ticket Prices</label>
+            <label for="slide-3a-trigger">Opening Hours</label>
             <ul>
                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -140,5 +169,7 @@
             </ul>
          </footer>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/lightbox.js"></script>	
    </body>
 </html>

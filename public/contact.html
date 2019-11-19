@@ -11,33 +11,43 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Marko+One" rel="stylesheet">
    </head>
    <body>
       <div class="wrap">
          <nav>
             <a href="index.html"><img src="images/jurassic-park-logo.png" alt="Jurrasic Park Logo" width="150" height="84"/></a>
             <ul>
-               <li><a class="active" href="index.html">HOME</a></li>
+               <li><a href="index.html">HOME</a></li>
                <li><a href="about.html">ABOUT</a></li>
                <li><a href="dinosaurs.html">DINOSAURS</a></li>
                <li><a href="attractions.html">ATTRACTIONS</a></li>
-               <li><a href="contact.html">CONTACT</a></li>
+               <li><a class="active" href="contact.html">CONTACT</a></li>
             </ul>
          </nav>
          <header>
             <ul>
-               <li><label for="slide-1-trigger">Home</label></li>
-               <li><label for="slide-2-trigger">Special Offer</label></li>
-               <li><label for="slide-3-trigger">Ticket Prices</label></li>
-               <li><label for="slide-3a-trigger">Opening Hours</label></li>
+               <li><label for="slide-25-trigger">Contact Details</label></li>
+               <li><label for="slide-26-trigger">Location</label></li>
+               <li><label for="slide-27-trigger">Contact By Form</label></li>
             </ul>
          </header>
-         <input id="slide-1-trigger" type="radio" name="slides" checked>
-         <section class="slide slide-one">
-            <div class="banner cf">
-               <h1>START YOUR<span>ADVENTURE</span></h1>
-               <a href="attractions.html">EXPLORE</a>	
+         <input id="slide-25-trigger" type="radio" name="slides" checked>
+         <section class="slide slide-twentyfive">
+            <h1>Contact Details</h1>
+            <div class="col">
+               <i class="fa fa-map-marker fa-2x"></i>
+               <h2>Address</h2>
+               <p>Quinault, WA 98575</p>
+            </div>
+            <div class="col">
+               <i class="fa fa-phone fa-2x"></i>
+               <h2>Phone</h2>
+               <p>(360) 1234567</p>
+            </div>
+            <div class="col">
+               <i class="fa fa-envelope fa-2x"></i>
+               <h2>Email</h2>
+               <a href="https://www.google.com/gmail/" target="_blank">jurassic_park@gmail.com</a>
             </div>
          </section>
          <input id="slide-2-trigger" type="radio" name="slides">
@@ -132,6 +142,9 @@
          </section>
          <footer>
             <h3>&copy; Rafal Jasinski 2017</h3>
+            <label for="slide-2-trigger">Special Offer</label>
+            <label for="slide-3-trigger">Ticket Prices</label>
+            <label for="slide-3a-trigger">Opening Hours</label>
             <ul>
                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -139,6 +152,20 @@
                <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube fa-lg"></i></a></li>
             </ul>
          </footer>
+         <input id="slide-26-trigger" type="radio" name="slides">
+         <section class="slide slide-twentysix">
+            <h1>Location</h1>
+            <div id="map">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.121968319916!2d-123.84823668511821!3d47.46805260553299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDI4JzA1LjAiTiAxMjPCsDUwJzQ1LjgiVw!5e0!3m2!1spl!2sie!4v1490371703528" width="800" height="370"></iframe>
+            </div>
+         </section>
+         <input id="slide-27-trigger" type="radio" name="slides">
+         <section class="slide slide-twentyseven">
+            <h1>Contact By Form</h1>
+            <div id="form">
+               <script type="text/javascript" src="https://form.jotformeu.com/jsform/70855397792372"></script>
+            </div>
+         </section>
       </div>
    </body>
 </html>
